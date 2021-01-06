@@ -2,6 +2,7 @@
 title: My page
 layout: default
 ---
+<img src="theodora_kontogianni_image.jpg" alt="avatar" class="center" style="float" width=100>
 
 ## Welcome to GitHub Pages
 
