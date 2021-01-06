@@ -1,9 +1,3 @@
----
-title: My page
-layout: default
----
-<img src="theodora_kontogianni_image.jpg" alt="avatar" class="center" style="float" width=100>
-
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/theodorakontogianni/theodorakontogianni.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
