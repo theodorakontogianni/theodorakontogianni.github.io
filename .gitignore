@@ -1,0 +1,9 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+.tweet-cache/
+.jekyll-metadata
+.DS_Store
+vendor/
+_config 2.yml
+/floorplan.png
