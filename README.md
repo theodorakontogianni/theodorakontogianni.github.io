@@ -14,7 +14,9 @@ Most content is maintained in these files:
 - `_bibliography/papers.bib` — publications
 - `_config.yml` — site title, links, and general settings
 
-Commit and push changes to the configured GitHub Pages source branch to publish them. Check the repository’s **Settings → Pages** to see which branch and folder GitHub Pages currently uses.
+Commit and push changes to the `group` branch to publish them. The [deployment workflow](.github/workflows/deploy.yml) installs the site’s dependencies, builds the website, and publishes it to GitHub Pages automatically. Check the repository’s **Actions** tab for the deployment result.
+
+In **Settings → Pages → Build and deployment**, the publishing source should be **GitHub Actions**.
 
 ## Theme and license
 
