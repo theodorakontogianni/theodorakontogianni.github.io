@@ -10,7 +10,6 @@ email: thekon@dtu.dk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Academic website of Theodora Kontogianni, Associate Professor in 3D Computer Vision at DTU.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: computer vision, 3D vision, spatial AI, interactive learning, continual learning
 
