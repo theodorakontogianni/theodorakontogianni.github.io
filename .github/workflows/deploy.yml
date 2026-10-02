@@ -1,0 +1,60 @@
+name: Deploy website to GitHub Pages
+
+on:
+  push:
+    branches: [group]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out the website
+        uses: actions/checkout@v6
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler: '2.4.22'
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes imagemagick graphviz jupyter-nbconvert
+
+      - name: Install Ruby dependencies
+        run: |
+          bundle lock --add-platform x86_64-linux
+          bundle install --jobs 4 --retry 3
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build the website
+        run: bundle exec jekyll build --destination ./_site
+        env:
+          JEKYLL_ENV: production
+
+      - name: Upload the built website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./_site
+
+      - name: Publish the website
+        id: deployment
+        uses: actions/deploy-pages@v4
