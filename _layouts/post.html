@@ -52,10 +52,14 @@ layout: default
   </article>
 
   {%- if page.related_publications != null and page.related_publications.size > 0 -%}
-  {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
+  {% assign publications = page.related_publications
+    | replace: ", ", ","
+    | split: ","
+    | join: "|" %}
+  {% assign bibliography_file = site.scholar.bibliography | default: "papers.bib" %}
   <h2>References</h2>
   <div class="publications">
-    {% bibliography -f {{ site.scholar.bibliography }} -q @*[key^={{ publications }}]* %}
+    {% bibliography -f {{ bibliography_file }} -q @*[key^={{ publications }}]* %}
   </div>
   {%- endif %}
 

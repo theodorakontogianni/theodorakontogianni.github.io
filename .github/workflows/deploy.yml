@@ -42,6 +42,9 @@ jobs:
           bundle lock --add-platform x86_64-linux
           bundle install --jobs 4 --retry 3
 
+      - name: Install Mermaid CLI
+        run: npm install --global @mermaid-js/mermaid-cli
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
