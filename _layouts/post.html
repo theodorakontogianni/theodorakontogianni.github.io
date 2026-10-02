@@ -56,10 +56,9 @@ layout: default
     | replace: ", ", ","
     | split: ","
     | join: "|" %}
-  {% assign bibliography_file = site.scholar.bibliography | default: "papers.bib" %}
   <h2>References</h2>
   <div class="publications">
-    {% bibliography -f {{ bibliography_file }} -q @*[key^={{ publications }}]* %}
+    {% bibliography -f papers.bib -q @*[key^={{ publications }}]* %}
   </div>
   {%- endif %}
 
