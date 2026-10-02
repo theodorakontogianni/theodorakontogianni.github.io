@@ -1,8 +1,31 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+role: Associate Professor in 3D Computer Vision
+affiliation: Technical University of Denmark · Pioneer Centre for AI
+research_focus:
+  - title: Interactive 3D & 4D Perception
+    description: Human-guided methods that make complex 3D and temporal scene understanding efficient and adaptable.
+  - title: Spatial AI
+    description: Learning representations and models that reason about geometry, structure, and dynamic environments.
+  - title: Continual & Adaptive Learning
+    description: Systems that improve from corrections, feedback, and changing data over time.
+updates:
+  - year: "2026"
+    text: "Awarded a Sapere Aude: DFF Research Leader grant for Total3D: Building Universal Representations for Spatial AI."
+    url: https://dff.dk/en/our-funded-projects/meet-the-researchers/research-leaders/eksterne-personer-en/research-leaders-2026/
+  - year: "2026"
+    text: "Area Chair for 3DV 2027 and CVPR 2027."
+  - year: "2026"
+    text: "Publication and Workshop Chair, and Area Chair for ECCV 2026."
+  - year: "2026"
+    text: "Marigold-SSD: zero-shot depth completion with single-step diffusion at CVPR Workshops."
+    url: https://dtu-pas.github.io/marigold-ssd/
+  - year: "2025"
+    text: "Interactive4D: interactive 4D LiDAR segmentation at ICRA."
+    url: https://ilya-fradlin.github.io/Interactive4D/
 
 profile:
   align: right
@@ -15,11 +38,11 @@ profile:
 
 news: false
 latest_posts: false
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am an Assistant Professor in 3D Computer Vision at the
+I am an Associate Professor in 3D Computer Vision at the
 [Department of Applied Mathematics and Computer Science](https://www.compute.dtu.dk/)
 at the [Technical University of Denmark](https://www.dtu.dk/). I am also affiliated
 with the [Pioneer Centre for AI](https://www.aicentre.dk/), where I work on 3D
@@ -36,7 +59,7 @@ I also completed two internships at Google Research, in the US and Zurich.
 My research interests are in computer vision, with a focus on 3D scene
 understanding, interactive learning, and continual learning.
 
-<div style="background:#eef8ff;border-left:4px solid #007acc;padding:0.8rem 1rem;margin:1.5rem 0;">
+<div class="recruiting-note">
   <strong>Join our team.</strong> I am looking for motivated PhD students and
   postdoctoral researchers interested in 3D vision and 3D perception.
   <a href="mailto:thekon@dtu.dk">Get in touch</a>.

@@ -1,0 +1,88 @@
+.team-section {
+  margin-top: 2.75rem;
+
+  > h2 {
+    margin-bottom: 1.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    font-family: "Roboto Slab", Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  text-align: center;
+
+  h3 {
+    margin: 1rem 0 0.4rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  h3 a {
+    color: var(--global-text-color);
+
+    &:hover, &:focus-visible {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+.team-portrait {
+  display: block;
+  width: 160px;
+  max-width: 100%;
+  height: 160px;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.team-initial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--global-theme-soft-color);
+  color: var(--global-theme-color);
+  font-family: "Roboto Slab", Georgia, serif;
+  font-size: 2.75rem;
+  font-weight: 300;
+}
+
+.team-supervision {
+  max-width: 230px;
+  margin: 0 auto;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+  line-height: 1.6;
+
+  a {
+    color: var(--global-theme-color);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+}
+
+.team-join {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+}

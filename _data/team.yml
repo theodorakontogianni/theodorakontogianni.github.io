@@ -1,0 +1,35 @@
+# Members appear in order, grouped by category.
+# Optional fields: image (path from site root), url (personal profile).
+# First names are used until full names and profile details are confirmed.
+- name: Binod Singh
+  url: https://singhbino3d.github.io/
+  image: /assets/img/team/binod-singh.jpg
+  image_source: https://singhbino3d.github.io/
+  category: PhD students
+
+- name: Jakub Gregorek
+  url: https://orbit.dtu.dk/en/persons/jakub-gregorek/
+  image: /assets/img/team/jakub-gregorek.jpg
+  image_source: https://orbit.dtu.dk/en/persons/jakub-gregorek/
+  category: PhD students
+  co_supervisor:
+    name: Lazaros Nalpantidis
+    url: https://lanalpa.github.io/
+
+- name: Philip Lund Møller
+  url: https://orbit.dtu.dk/en/persons/philip-lund-m%C3%B8ller/
+  image: /assets/img/team/philip-lund-moller.jpg
+  image_source: https://orbit.dtu.dk/en/persons/philip-lund-m%C3%B8ller/
+  category: PhD students
+  co_supervisor:
+    name: Lazaros Nalpantidis
+    url: https://lanalpa.github.io/
+
+- name: Pablo Delgado Rodríguez
+  url: https://orbit.dtu.dk/en/persons/pablo-delgado-rodr%C3%ADguez/
+  image: /assets/img/team/pablo-delgado-rodriguez.jpg
+  image_source: https://orbit.dtu.dk/en/persons/pablo-delgado-rodr%C3%ADguez/
+  category: Postdocs
+  co_supervisor:
+    name: Aasa Feragen
+    url: https://orbit.dtu.dk/en/persons/aasa-feragen/

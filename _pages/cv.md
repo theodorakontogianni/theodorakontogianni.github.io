@@ -1,20 +1,23 @@
 ---
 layout: page
 permalink: /cv/
-title: cv
-nav: true
+title: CV
+nav: false
 nav_order: 4
 description: Academic background and current position.
 ---
 
 ## Current Position
 
-**Assistant Professor in 3D Computer Vision**<br>
+**Associate Professor in 3D Computer Vision**<br>
 Department of Applied Mathematics and Computer Science, Technical University of Denmark
 
 Affiliated with the [Pioneer Centre for AI](https://www.aicentre.dk/).
 
 ## Previous Positions
+
+**Assistant Professor in 3D Computer Vision**<br>
+Department of Applied Mathematics and Computer Science, Technical University of Denmark
 
 **Postdoctoral Fellow, ETH AI Center**<br>
 Working with Prof. Dr. Konrad Schindler and Prof. Dr. Siyu Tang.

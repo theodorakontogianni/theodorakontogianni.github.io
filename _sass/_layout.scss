@@ -6,6 +6,9 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
 
   h1, h2, h3, h4, h5, h6 {
     scroll-margin-top: 66px;
@@ -14,7 +17,7 @@ body {
 
 body.fixed-top-nav {
   // Add some padding for the nav-bar.
-  padding-top: 56px;
+  padding-top: 68px;
 }
 
 body.sticky-bottom-footer {
@@ -24,6 +27,11 @@ body.sticky-bottom-footer {
 
 .container {
   max-width: $max-content-width;
+}
+
+.site-content {
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
 }
 
 // Profile
@@ -48,3 +56,109 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
+
+
+/*****************************************************************************
+* Teaching
+*****************************************************************************/
+
+.teaching-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0 1.5rem;
+}
+
+.teaching-card {
+  --card-accent: var(--global-theme-color);
+
+  position: relative;
+  display: flex;
+  min-height: 18rem;
+  flex-direction: column;
+  padding: 1.75rem;
+  overflow: hidden;
+  color: var(--global-text-color);
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.65rem;
+  box-shadow: var(--global-soft-shadow);
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    content: "";
+    background: var(--card-accent);
+  }
+
+  &:hover {
+    color: var(--global-text-color);
+    text-decoration: none;
+    border-color: var(--card-accent);
+    box-shadow: 0 10px 26px rgba(28, 35, 39, 0.1);
+    transform: translateY(-2px);
+  }
+
+  h2 {
+    margin: 0.65rem 0 1rem;
+    font-size: 1.45rem;
+    line-height: 1.25;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    color: var(--global-text-color-light);
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+}
+
+.teaching-card:nth-child(even) {
+  --card-accent: var(--global-accent-color);
+}
+
+.teaching-code {
+  color: var(--card-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.teaching-role {
+  align-self: flex-start;
+  padding: 0.28rem 0.65rem;
+  margin-top: auto;
+  color: var(--card-accent);
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.teaching-link {
+  margin-top: 1rem;
+  color: var(--card-accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  i {
+    margin-left: 0.25rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .teaching-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teaching-card {
+    min-height: auto;
+  }
+}
